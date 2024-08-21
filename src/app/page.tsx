@@ -62,7 +62,13 @@ export default function Home() {
 			/>
 
 			<div className="flex flex-col w-full h-full items-center justify-center space-y-8">
-				<div className="aspect-video max-w-2xl w-full relative rounded-xl ring-offset-zinc-950 ring-purple-800/50 ring-4 ring-offset-4 overflow-hidden">
+				<div className="aspect-video max-w-full w-full relative rounded-xl ring-offset-zinc-950 ring-purple-800/50 ring-4 ring-offset-4 overflow-hidden">
+					<div className="bg-purple-500 group cursor-pointer after:bg-zinc-950/80 after:size-4 pr-4 after:absolute after:rounded-full after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 size-8 rounded-full absolute top-1/2 left-1/2"> 
+						<div className="group-hover:opacity-100 group-hover:pointer-events-auto invisible p-4 group-hover:visible transition-all translate-y-8 group-hover:translate-y-0 opacity-0 cursor-pointer-none absolute left-full ml-4 rounded bg-zinc-950 text-white flex-col w-[280px]">
+							<h1 className="text-xl font-bold">Este é um pin teste</h1>
+							<p className="text-sm text-white/50">Um pin teste mostra como seria a visualização de um pin no scenario pré determinado</p>
+						</div>
+					</div>
 					{!scenes.length && (
 						<div className="w-full flex justify-center items-center h-full absolute top-0 left-0 bg-zinc-900">
 							<span className="text-white/60 text-sm italic">
